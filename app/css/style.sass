@@ -12,6 +12,8 @@ a
   &:hover
     text-decoration: underline
     color: #781c18
+  &:active
+    color: #333
 
 .container
   position: relative
@@ -24,41 +26,43 @@ header
   min-height: 180px
 
 header, header .wrapper
-  height: 150px
+  height: 300px
 
 #title
   position: absolute
-  top: 85px
-  left: 160px
-  line-height: 19px
+  top: 95px
+  left: 310px
+  line-height: 40px
 
 header img
   position: absolute
-  top: 50px
-  left: 50px
+  top: 15px
+  left: 20px
 
 header h1
-  font-size: 60px
+  font-size: 100px
   font-weight: 800
   color: #aa0000
   margin: 0
   padding: 0
 
 header h2
-  font-size: 25px
+  font-size: 40px
   font-weight: 800
 
 #sidebar
+  display: inline-block
+  margin-top: 15px
   ul
     font-size: 17px
     font-weight: bold
     list-style-type: none
-    margin-top: 5px
+    margin: 5px
     li
       margin-top: 7px
     ul
       font-size: 15px
-      margin-bottom: 12px
+      margin-bottom: 25px
       padding-left: 10px
       li
         margin-top: 3px
@@ -66,13 +70,19 @@ header h2
   margin: 0 40px 0 10px
   padding: 5px
   position: absolute
-  left: 147px
-  top: 0
+  left: 200px
+  top: 14px
 
   h1
     font-weight: bold
     font-size: 20px
     margin: 0 0 15px
+
+  h2
+    border-bottom: 1px solid #eee
+
+  ul
+    padding-left: 4px
 
 footer
   border-top: 1px solid #a8a8a8
