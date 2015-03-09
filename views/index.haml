@@ -5,13 +5,32 @@
 %ul
   %li Runtime configuration via irc
   %li Flexible authentication and permission system
-  %li Multi-language support
-  %li Plugin architecture that makes <a href="">writing new plugins</a> a breeze
-  %li Integrated <a href="">web service</a>
+  %li Plugin architecture that makes <a href="https://github.com/ruby-rbot/rbot/wiki/Develop%3APluginDev" rel="external">writing new plugins</a> a breeze
+  %li Integrated <a href="https://github.com/ruby-rbot/rbot/wiki/Develop%3AWebService" rel="external">web service</a>
   %li <strong>Batteries included</strong>: plugins for rss, twitter, imdb, translations, weather, notifications, lots of games and many more (over 70 plugins included)
 
 
 %h2#Install Install
+
+%p Right now there is no current release of rbot so the best way to get it is through <a href="http://git-scm.com/" rel="external">git</a>, checkout the <a href="https://github.com/ruby-rbot/rbot" rel="external">ruby-rbot/rbot</a> (master) repository on github. Using git you can download this repository locally and easily keep it up-to-date:
+
+%pre git clone git://github.com/ruby-rbot/rbot.git
+
+%p You can run rbot by the launch_here.rb script in the resulting rbot/ directory, but first make sure to fulfill the prerequisites (see <a href="https://github.com/ruby-rbot/rbot/wiki/InstallGuide" rel="external">install guide</a>). To update your copy at a later date run:
+
+%pre git pull
+
+%p If you are for some reason unable to use git directly you can also <a href="https://github.com/ruby-rbot/rbot/archive/master.zip" rel="external">download a snapshot</a> of the repository as a zip archive.
+
 %h2#Support Support
+
+%ul
+  %li For documentation on how to setup, use and develop rbot visit our <a href="https://github.com/ruby-rbot/rbot/wiki" rel="external">github wiki</a>.
+  %li To report bugs use the <a href="https://github.com/ruby-rbot/rbot/issues" rel="external">issue tracker</a> at github.
+  %li IRC: If you want to get in touch with other rbot users or developers join #rbot on chat.freenode.net (<a href="https://webchat.freenode.net/?channels=rbot" rel="external">webchat</a>). Please note that ruby-rbot2 is a running current version of rbot for testing purposes. ;)
+  %li <a href="http://groups.google.com/group/rbot" rel="external">User Group</a>: To subscribe sent a mail to rbot+subscribe@googlegroups.com, unsubscribe with rbot+unsubscribe@googlegroups.com.
+
 %h2#License License
+
+%p Rbot is dual licensed <a href="https://github.com/ruby-rbot/rbot/blob/master/COPYING.rbot" rel="external">MIT+acknowledgment clause</a> or <a href="https://github.com/ruby-rbot/rbot/blob/master/GPLv2" rel="external">GPLv2</a>.
 
