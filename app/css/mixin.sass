@@ -1,0 +1,38 @@
+
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+@mixin inline-list($sep)
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      display: inline
+    li:before
+      padding: 0 4px 0 0
+      content: $sep
+    li:first-child:before
+      padding: 0
+      content: ""
+
+@mixin middot-list
+  @include inline-list("\00b7")
+
+@mixin pipe-list
+  @include inline-list("|")
+
+/* prevents padding from influencing sizes */
+@mixin box-sizing-border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+@mixin user-select-none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+

@@ -1,0 +1,24 @@
+h1 Register
+
+p Sign up to share your rbot plugins in the public repository.
+
+- if @user and @user.errors.length > 0
+  ul.errors
+    - for error in @user.errors do
+      li #{error.join ' '}
+
+form method='POST' action='/register'
+  div
+    input type='text' name='username' value='' placeholder='Your Username'
+  div
+    input type='text' name='email' value='' placeholder='Your eMail'
+    .info You need to confirm your email address.
+  div
+    input type='password' name='password' value='' placeholder='Password'
+    .info Must be atleast 8 characters in length.
+  div
+    input type='password' name='password_confirm' value='' placeholder='Confirm Password'
+
+    button< type='submit' value='register'
+      | Register
+

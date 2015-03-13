@@ -1,8 +1,5 @@
 
-@mixin border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  border-radius: $radius
+@import 'mixin'
 
 body
   font-family: 'Open Sans', sans-serif
@@ -10,6 +7,7 @@ body
   color: #333
   margin: 0
   padding: 0
+  line-height: normal
 
 a
   text-decoration: none
@@ -19,6 +17,45 @@ a
     color: #781c18
   &:active
     color: #333
+
+form
+  margin: 0 0 20px 0
+
+input
+  display: inline-block
+  width: 300px
+  color: #555
+  font-size: 14px
+  margin: 2px 0px
+  height: 34px
+  padding: 6px 12px
+  border: 1px solid #ccc
+  @include box-sizing-border-box
+  @include border-radius(3px)
+
+button
+  color: white
+  font-size: 14px
+  margin: 2px 0px
+  height: 34px
+  padding: 6px 12px
+  background-color: #337ab7
+  border: 1px solid #2e6da4
+  @include box-sizing-border-box
+  @include border-radius(3px)
+  @include user-select-none
+  &:hover
+    cursor: pointer
+    background-color: #286090
+    border-color: #204d74
+
+
+.info
+  display: inline-block
+  margin: 10px 0 3px 5px
+  color: #999
+  vertical-align: bottom
+  font-size: 13px
 
 .container
   position: relative
@@ -39,7 +76,18 @@ pre
   padding: 16px
   line-height: 1.45
   background-color: #f7f7f7
+  margin: 0 0 16px 0
   @include border-radius(3px)
+
+p
+  margin: 0 0 16px 0
+
+strong
+  font-weight: bold
+
+ul
+  list-style-type: disc
+  margin: 0 0 20px 35px
 
 #title
   position: absolute
@@ -60,42 +108,44 @@ header h1
   padding: 0
 
 header h2
+  margin: 33px 0 0 0
   font-size: 40px
   font-weight: 800
 
 #sidebar
+  margin: 22px 0 0 0
   display: inline-block
-  margin-top: 15px
   ul
     font-size: 17px
     font-weight: bold
     list-style-type: none
-    margin: 5px
+    margin: 0 0 0 45px
     li
-      margin-top: 7px
+      margin: 0 0 7px 0
     ul
       font-size: 15px
-      margin-bottom: 25px
-      padding-left: 10px
+      margin: 5px 0 25px 15px
       li
-        margin-top: 3px
+        margin: 0 0 3px 0
+
+
 #body
-  margin: 0 40px 0 10px
-  padding: 5px
   position: absolute
-  left: 200px
-  top: 14px
+  padding: 10px
+  left: 205px
+  top: 9px
+  right: 0px
 
   h1
     font-weight: bold
     font-size: 20px
-    margin: 0 0 15px
+    margin: 0 0 16px 0
 
   h2
     border-bottom: 1px solid #eee
-
-  ul
-    padding-left: 35px
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 20px 0
 
 footer
   border-top: 1px solid #a8a8a8

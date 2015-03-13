@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title Rbot - The Ruby IRC Bot 
+
+    link href='/css/reset.css' rel='stylesheet' type='text/css'
+    link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,800,400' rel='stylesheet' type='text/css' 
+    == css :app
+    link rel='icon' type='image/x-icon' href='/favicon.ico'
+  body
+    a href='https://github.com/ruby-rbot/rbot'
+      img style='position: absolute; top: 0; right: 0; border: 0;' src='https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67' alt='Fork me on GitHub' data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png'
+    header
+      .container
+        == img '/img/logo.png'
+        #title
+          h1 rbot
+          h2 The Ruby IRC Bot.
+    #content
+      .container
+        #sidebar
+          ul
+            li
+              a href='/'
+                | Home
+              ul
+                li
+                  a href='/#Install' Install
+                li
+                  a href='/#Support' Support
+                li
+                  a href='/#License' License
+            li
+              a href='https://github.com/ruby-rbot/rbot/wiki' Wiki
+            li
+              | Plugins
+        #body
+          == yield
+          footer
+            | rbot is free and open source
+            a<> href='https://github.com/ruby-rbot/rbot/blob/master/COPYING'
+              | licensed
+            | software &middot; logo by
+            a<> href='http://www.benposch.com/'
+              | Benjamin Posch
+            | licensed
+            a< href='http://creativecommons.org/licenses/by-nc-sa/4.0/'
+              | CC BY-NC-SA 4.0
+
