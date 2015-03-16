@@ -81,11 +81,3 @@ post '/register' do
   end
 end
 
-# ----------------------------------------------------
-
-# due to some very strange apache2/passenger related bug,
-# until I figure this out as a quick workaround:
-get '/rdoc' do
-  redirect to('/rdoc/'), 303
-end
-
